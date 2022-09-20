@@ -84,7 +84,7 @@ namespace Lab_1
             Console.WriteLine(json);
             Student restoredStudent = JsonSerializer.Deserialize<Student>(json);
 
-            string jsfile = @"C:\Users\dan_i\source\repos\Lab_1_1\Lab_1_1\bin\Debug\net6.0\Student.json";
+            string jsfile = @"C:\Users\dan_i\source\repos\Lab_1_1\Lab_1_1\bin\Debug\net6.0\Student.json";//необходимо создать файл с расширением .json и указать полный путь
             Console.WriteLine(File.Exists(jsfile) ? "Файл существует" : "Файл не существует");
             {
                 File.Delete(jsfile);
@@ -95,7 +95,7 @@ namespace Lab_1
             //Задание номер 4
             List<Student> users = new List<Student>();
             XmlDocument xDoc = new XmlDocument();
-            xDoc.Load(@"C:\Users\dan_i\source\repos\Lab_1_1\Lab_1_1\bin\Debug\net6.0\users.xml");
+            xDoc.Load(@"C:\Users\dan_i\source\repos\Lab_1_1\Lab_1_1\bin\Debug\net6.0\users.xml");//необходимо создать файл с расширением .xml и указать полный путь
             XmlElement xRoot = xDoc.DocumentElement;
 
             // создаем новый элемент student
@@ -139,7 +139,7 @@ namespace Lab_1
             Console.ReadLine();
 
             // удаление файла
-            string xmlfile = @"C:\Users\dan_i\source\repos\Lab_1_1\Lab_1_1\bin\Debug\net6.0\users.xml";
+            string xmlfile = @"C:\Users\dan_i\source\repos\Lab_1_1\Lab_1_1\bin\Debug\net6.0\users.xml";//
             Console.WriteLine(File.Exists(xmlfile) ? "Файл существует" : "Файл не существует");
             {
                 File.Delete(xmlfile);
